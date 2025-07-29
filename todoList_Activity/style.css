@@ -1,0 +1,31 @@
+/* body {
+    text-align: center;
+} */
+
+h1 {
+    margin: 5px;
+    text-align: center;
+}
+
+/* div {
+    display: inline-block;
+} */
+
+.addTask {
+    background-color: pink;
+    padding: 10px;
+    text-align: center;
+    width: 350px;
+    margin: 5px auto;
+}
+
+.tasksList {
+    background-color: yellow;
+    padding: 10px;
+    width: 600px;
+    margin: 5px auto;
+}
+
+.tasksList h3 {
+    text-align: center;
+}
