@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Simon Says Game</h1>
+    <h3>Can you follow the pattern? Press any key to start.</h3>
+
+    <div class="container">
+        <div class="box btn green" type="button" id="green"></div>     <!-- HERE CLASS btn IS GIVEN FOR SELECTION, ALTERNATIVELY WE CAN USE div TO SELECT THEM BY SPECIFYING THE div type WE WANT TO SELECT -->
+        <div class="box btn red" type="button" id="red"></div>         <!-- IN CASE OF div, type IS NOT A RECOGNIZED ATTRIBUTE. SO THE BROWSER IGNORES IT BUT JS CAN STILL READ IT MANUALLY. -->
+        <div class="box btn yellow" type="button" id="yellow"></div>   <!-- REASON FOR THIS: ATTRIBUTES IN DOM ARE LIKE KEY-VALUE PAIR, SO JS CAN CHECK IT, UNLESS BROWSER ENFORCES SPECIAL BEHAVIOR. -->
+        <div class="box btn blue" type="button" id="blue"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

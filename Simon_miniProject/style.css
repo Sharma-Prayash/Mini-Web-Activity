@@ -1,0 +1,63 @@
+h1, h3 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 230px 230px;
+    grid-template-columns: 230px 230px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border: 8px solid black;
+    border-radius: 30%;
+    transition: all 0.2s;
+}
+
+.red {
+    background-color: rgb(253, 42, 42);
+}
+
+.green {
+    background-color: rgb(63, 228, 63);
+}
+
+.blue {
+    background-color: rgb(46, 46, 240);
+}
+
+.yellow {
+    background-color: rgb(255, 255, 0);
+}
+
+.gameFlash {
+    background-color: rgb(3, 78, 3);
+}
+
+.userFlash {
+    background-color: white;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+body.shake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px); }
+    20% { transform: translate(-1px, -2px); }
+    40% { transform: translate(-3px, 0px); }
+    60% { transform: translate(3px, 2px); }
+    80% { transform: translate(1px, -1px); }
+    100% { transform: translate(0, 0); }
+}
